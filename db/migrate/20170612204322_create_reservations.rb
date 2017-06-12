@@ -1,0 +1,12 @@
+class CreateReservations < ActiveRecord::Migration[5.1]
+  def change
+    create_table :reservations do |t|
+      t.string :reservee_email
+      t.string :dining_date
+      t.text :note
+      t.references :restaurant, foreign_key: true
+
+      t.timestamps
+    end
+  end
+end

@@ -17,5 +17,12 @@
   <strong>Address:</strong>
   <%= @restaurant.address %>
 </p>
+
+<h2>Reservations</h2>
+<%= render @restaurant.reservations %>
+
+<h2>Make a Reservation:</h2>
+<%= render 'reservations/form' %>
+
 <%= link_to 'Back', restaurants_path %>
 <%= link_to 'Edit', edit_restaurant_path(@restaurant) %>
