@@ -58,3 +58,7 @@ gem 'rename'
 gem 'devise'
 
 gem 'respec'
+
+gem 'dotenv-rails', require: 'dotenv/rails-now'
+
+gem "recaptcha", require: "recaptcha/rails"

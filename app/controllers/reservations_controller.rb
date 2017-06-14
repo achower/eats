@@ -2,10 +2,19 @@ class ReservationsController < ApplicationController
   before_action :authenticate_user!, only: [:destroy]
   before_action :restrict_reject, only: [:destroy]
 
+  def new
+    @reservation = Reservation.new
+  end
+
   def create
     @restaurant = Restaurant.find(params[:restaurant_id])
-    @reservation = @restaurant.reservations.create(reservation_params)
-    redirect_to restaurant_path(@restaurant)
+    @reservation = @restaurant.reservations.new(reservation_params)
+
+    if verify_recaptcha(model: @reservation) && @reservation.save
+      redirect_to restaurant_path(@restaurant), notice: "Successfully created restaurant"
+    else
+      redirect_to restaurant_path(@restaurant), notice: "Please verify your not a robot"
+    end
   end
 
   def destroy
