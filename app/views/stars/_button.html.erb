@@ -1,0 +1,5 @@
+<% if current_user.star?(restaurant) %>
+  <%= button_to "Unstar", restaurant_unstar_path(restaurant_id: restaurant.id), remote: true, method: :delete  %>
+<% else %>
+  <%= button_to "Star", restaurant_star_path(restaurant_id: restaurant.id), remote: true, method: :put  %>
+<% end %>
