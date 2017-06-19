@@ -10,6 +10,10 @@ class RestaurantsController < ApplicationController
   def show
   end
 
+  def dashboard
+    @restaurants = current_user.restaurants
+  end
+
   def new
     @restaurant = Restaurant.new
   end
