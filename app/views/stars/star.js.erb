@@ -1,1 +1,1 @@
-$('div#<%= dom_id(@restaurant) %>').html('<%= j render partial: "button", locals: {restaurant: @restaurant} %>');
+$('<%="star_button_#{@restaurant.id}"%>').html('<%= j render partial: "button", locals: {restaurant: @restaurant} %>');
