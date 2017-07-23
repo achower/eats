@@ -15,7 +15,13 @@
       <td><%= link_to 'Show', restaurant_path(restaurant) %></td>
       <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
       <td><%= link_to 'Destroy', restaurant_path(restaurant), method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      <td><%= render partial: "stars/button", locals: { restaurant: restaurant } %></td>
+      <% if user_signed_in? %>
+        <td>
+          <%= div_for restaurant do %>
+            <%= render partial: "stars/button", locals: { restaurant: restaurant } %>
+          <% end %>
+        </td>
+      <% end %>
     </tr>
   <% end %>
 </table>

@@ -1,5 +1,5 @@
 class Restaurant < ApplicationRecord
-  has_many :stars
+  has_many :stars, dependent: :destroy
   has_many :starers, source: :user, through: :stars, dependent: :destroy
   belongs_to :user
 

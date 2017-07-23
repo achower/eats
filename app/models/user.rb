@@ -9,7 +9,8 @@ class User < ApplicationRecord
 
   has_many :restaurants
   has_many :stars, dependent: :destroy
-  has_many :starred_restaurants, source: :restaurant, through: :stars
+  has_many :starred_restaurants, through: :stars, source: :restaurants
+
 
   # creates a new star row with restaurant_id and user_id
   def star!(restaurant)

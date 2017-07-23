@@ -1,2 +1,1 @@
-$('<%="unstar_button_#{@restaurant.id}"%>').html('<%= j render partial: "button", locals: {restaurant: @restaurant} %>');
-// $('div#<%= dom_id(@restaurant) %>').html('<%= j render partial: "button", locals: {restaurant: @restaurant} %>');
+$('div#<%= dom_id(@restaurant) %>').html('<%= j render partial: "button", locals: {restaurant: @restaurant} %>');
