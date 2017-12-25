@@ -26,6 +26,16 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 # I want to use the div_for helper, which was removed in rails 5
 gem 'record_tag_helper', '~> 1.0'
+# Let's make things pretty...quickly
+gem 'bootstrap-sass'
+# I mayyyy have needed to rename this gem at one point
+gem 'rename'
+# Needs Users
+gem 'devise', '~> 4.3.0'
+# Environment variables for Recaptcha
+gem 'dotenv-rails', require: 'dotenv/rails-now'
+# Turing tests are fun
+gem "recaptcha", require: "recaptcha/rails"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -57,10 +67,3 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'rename'
-
-gem 'devise'
-
-gem 'dotenv-rails', require: 'dotenv/rails-now'
-
-gem "recaptcha", require: "recaptcha/rails"
