@@ -31,7 +31,7 @@ Registered users can create restaurants and "star" restaurants they like. Unregi
 
 * Postgres - for Database (especially since I'm hosting this on Heroku)
 
-* reCAPTCHA - fort additional security
+* reCAPTCHA - for additional security
 
 Set up the application on Heroku, then set up your reCAPTCHA reCAPTCHA account here:
 * https://www.google.com/recaptcha/admin
