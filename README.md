@@ -17,7 +17,7 @@ An interpretation of the [Reservster project](https://github.com/search?utf8=%E2
 
 * REST
 
-This was project was put together over several months as I was learning the Rails framework through the StartUp Institute. We started with learning CRUD, REST and how routes worked in Rails, then eventually learned about database relationships.
+This project was put together over several months while I was learning the Rails framework through the StartUp Institute. We started with learning CRUD, REST, how routes worked in Rails, then eventually learned about database relationships.
 
 Registered users can create restaurants and "star" restaurants they like. Unregistered users can create reservations at restaurants.
 
@@ -40,9 +40,11 @@ Then add your reCAPTCHA SITE and SECRET key variables to a file named .env (only
 export RECAPTCHA_SITE_KEY  = 'key'
 export RECAPTCHA_SECRET_KEY = 'key'
 
+I used Bootstrap to quickly make the app presentable.
+
 ## Lessons Learned:
 
-One of the more fun things I had to research was using reCAPTCHA. It wasn't to difficult to sign up for, but it certainly became a complicated to get it to render and function. It came down to properly setting up the environment variables of the authentication keys with the help of the dotenv gem.
+One of the more fun things I had to research was how to implement reCAPTCHA in your rails app. It wasn't too difficult to sign up for, but it certainly became complicated to get it to render and function. It came down to properly setting up the environment variables for the authentication keys with the help of the dotenv gem so you could safely publish it on Heroku.
 
 I struggled the most with understanding/setting up the many to many relationship between "stars", "restaurants", and "users" while maintaining the one to many relationship between "users" and "restaurants" in my model. Not to mention getting the star actions to work with AJAX (which required using the div_for helper, but because it was removed from Rails 5 I needed to install the gem 'record_tag_helper'). With almost certainity, the most important lesson I learned from the experience was assessing when I've spent too much time researching on my own and knowing when to seek help from a more experienced programmer.
 
