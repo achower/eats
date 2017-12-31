@@ -33,7 +33,7 @@ Registered users can create restaurants and "star" restaurants they like. Unregi
 
 * reCAPTCHA - for additional security
 
-Set up the application on Heroku, then set up your reCAPTCHA reCAPTCHA account here:
+Set up the application on Heroku, then set up your reCAPTCHA account here:
 * https://www.google.com/recaptcha/admin
 
 Then add your reCAPTCHA SITE and SECRET key variables to a file named .env (only works with 'dotenv-rails' gem):
