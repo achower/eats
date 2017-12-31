@@ -19,7 +19,7 @@ This was project was put together over several months as I was learning the Rail
 
 Registered users can create restaurants and "star" restaurants they like. Unregistered users can create reservations at restaurants.
 
-![Eats Home Page](https://agile-cliffs-11831.herokuapp.com/images/Home_Page.png)
+![Eats Home Page](https://raw.githubusercontent.com/achower/eats/master/public/images/Home_Page.png)
 
 ## How It's Made:
 
