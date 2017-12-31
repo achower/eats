@@ -1,6 +1,8 @@
 # EATS
 **Link to project:** https://agile-cliffs-11831.herokuapp.com/
 
+![Eats Home Page](https://raw.githubusercontent.com/achower/eats/master/public/images/Home_Page.png)
+
 An interpretation of the [Reservster project](https://github.com/search?utf8=%E2%9C%93&q=reservster&type=) (find other examples here) thats purpose was to explore some of the impressive capabilities of Ruby on Rails, as well as important programming concepts, including:
 
 * Authentication
@@ -18,8 +20,6 @@ An interpretation of the [Reservster project](https://github.com/search?utf8=%E2
 This was project was put together over several months as I was learning the Rails framework through the StartUp Institute. We started with learning CRUD, REST and how routes worked in Rails, then eventually learned about database relationships.
 
 Registered users can create restaurants and "star" restaurants they like. Unregistered users can create reservations at restaurants.
-
-![Eats Home Page](https://raw.githubusercontent.com/achower/eats/master/public/images/Home_Page.png)
 
 ## How It's Made:
 
